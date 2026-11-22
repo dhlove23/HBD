@@ -251,7 +251,7 @@ function startMusic() {
   if (SONG) {
     const audio = new Audio(SONG);
     audio.loop = true;
-    audio.volume = 0.8;
+    audio.volume = 0.2;
     audio.play().catch(() => { started = false; });
   } else {
     ctx.resume().then(playLoop);
